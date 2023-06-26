@@ -1,0 +1,47 @@
+.how {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem 0;
+    &__three {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      h3 {
+        margin: 1rem;
+        font-size: 1rem;
+      }
+      p {
+        margin: 0;
+        padding: 0 1rem;
+        font-size: 1rem;
+      }
+      &:nth-of-type(2) .how__icon {
+        background: $accent;
+        color: $text2;
+      }
+    }
+    &__icon {
+      background: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: $radius1;
+    }
+  }
+  
+  @media screen and (max-width: $break-sm) {
+    .how {
+      &__three {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }

@@ -1,0 +1,31 @@
+.pricing {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__card {
+      display: flex;
+      flex-direction: column;
+      background: wheat;
+      max-width: 500px;
+      margin-bottom: 2rem;
+  
+      h2 {
+        background: $primary;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0.2rem 1rem;
+      }
+    }
+    &__num {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    &__txt {
+      text-align: left;
+    }
+  }

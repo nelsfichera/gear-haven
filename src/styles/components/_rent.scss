@@ -1,0 +1,103 @@
+.rent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: left;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 1rem;
+      border-radius: $radius1;
+      margin: 0.5rem;
+      h2 {
+        font-size: 1rem;
+        font-weight: bold;
+  
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+  
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .btn {
+        align-self: center;
+      }
+    }
+    &__photo {
+      overflow: hidden;
+      height: 200px;
+      width: 100%;
+      border-radius: $radius1;
+      position: relative;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    &__msg {
+      position: absolute;
+      inset: 0;
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+    }
+    &__badge {
+      padding: 0.3rem;
+      background: $primary;
+      margin: 0.5rem 0;
+      border-radius: $radius1;
+    }
+    &__filter {
+      display: flex;
+      gap: 5px;
+      &__btn {
+        padding: 0.3rem 1rem;
+        background: $primary;
+        margin: 0.5rem 0;
+        border-radius: $radius1;
+        cursor: pointer;
+        &--special {
+          background: $accent;
+          color: $text2;
+        }
+        &--active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: $break-sm) {
+    .rent {
+      &__filter,
+      h1,
+      h3 {
+        padding: 0 1rem;
+      }
+      &__cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &__card {
+        padding: 0.7rem;
+        margin: 0;
+      }
+    }
+  }

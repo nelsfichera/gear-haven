@@ -1,0 +1,147 @@
+.user {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    &__nav {
+      text-align: center;
+      margin-bottom: 1rem;
+      background: $accent;
+      padding: 0.5rem;
+      align-self: stretch;
+      &__link,
+      &__link:visited,
+      &__link:hover {
+        color: $text2;
+        text-decoration: none;
+        margin-right: 1rem;
+      }
+      &__link.active,
+      &__link:visited.active,
+      &__link:hover.active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .alert {
+    font-size: 0.9rem;
+    height: 1rem;
+    &--danger {
+      color: red;
+    }
+    &--success {
+      color: green;
+    }
+  }
+  
+  .dashboard {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    > h2 {
+      font-weight: bold;
+      align-self: flex-start;
+      margin-left: 2.2rem;
+    }
+    .shadow-sm {
+      box-shadow: none;
+    }
+    .rented__cards {
+      margin-bottom: 2rem;
+    }
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  }
+  
+  .editcard {
+    max-width: 700px;
+    display: flex;
+    border: 1px solid silver;
+    border-radius: $radius1;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    &__photo {
+      width: 200px;
+    }
+    &__list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0.4rem;
+      > * {
+        margin-bottom: 0.3rem;
+      }
+    }
+    &__info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .rented__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1rem;
+  }
+  .rented__card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logout {
+    display: flex;
+    padding: 0 2rem;
+    width: 100%;
+    /* max-width: 960px; */
+    justify-content: flex-end;
+    align-items: center;
+    p {
+      margin: 0 0.6rem;
+    }
+  }
+  
+  .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    * {
+      margin: 0.3rem;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+  }
+  
+  @media screen and (max-width: $break-sm) {
+    .rented__cards {
+      display: flex;
+      flex-direction: column;
+    }
+    .editcard {
+      flex-direction: column;
+      &__photo {
+        margin: 0 auto;
+      }
+    }
+  }

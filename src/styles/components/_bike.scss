@@ -1,0 +1,71 @@
+.bike {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      margin: 0;
+    }
+    ul {
+      list-style-type: square;
+      list-style-position: inside;
+    }
+    &__title {
+      width: 60%;
+      text-decoration-line: underline;
+      text-decoration-color: $primary;
+    }
+    &__img {
+      align-self: center;
+      display: flex;
+      border-bottom: 5px solid $accent;
+      margin: 1rem 0;
+      max-height: 605px;
+      img {
+        display: block;
+        width: 100%;
+      }
+      &first {
+        max-width: 600px;
+        // width: 100%;
+      }
+      &rest {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+    &__desc {
+    }
+    &__soft {
+    }
+    &__bull {
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+    }
+    &__tags {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: $break-sm) {
+    .bike {
+      padding: 0 1rem;
+      &__title {
+        width: 100%;
+      }
+      &__img {
+        flex-direction: column;
+        &first {
+        }
+        &rest {
+          display: none;
+        }
+      }
+      &__info > * {
+        font-size: 1.2rem;
+      }
+    }
+  }

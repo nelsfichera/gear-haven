@@ -1,0 +1,116 @@
+.navbar {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 960px;
+    // min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    position: relative;
+  
+    // position: sticky;
+    // top: 0;
+    // z-index: 3;
+    background: $bg-light;
+    &__logo {
+      flex: 1 0 220px;
+      font-size: 2rem;
+      min-height: 70px;
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+    &__list {
+      flex: 1;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    &__item {
+      display: inline;
+      margin: 1rem;
+      a {
+        color: $text1;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .burger__btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: $primary;
+      border-radius: 10px;
+    }
+  }
+  
+  .hov-animate {
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      transform: scaleX(0);
+      height: 3px;
+      bottom: -5px;
+      left: 0;
+      background-color: $primary;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  
+  @media screen and (max-width: $break-sm) {
+    .navbar {
+      &__list {
+        display: none;
+        order: 5;
+        flex-direction: column;
+        align-items: center;
+        &--open {
+          display: flex;
+        }
+      }
+      .btn {
+        min-width: 100px;
+        margin-right: 2rem;
+      }
+    }
+    .burger__btn {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: $break-md) {
+    .navbar {
+      &__list {
+        order: 5;
+        justify-content: space-between;
+      }
+      button {
+      }
+    }
+  }

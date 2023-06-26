@@ -1,0 +1,40 @@
+$radius1: 0.375rem;
+$form-bg: white;
+$form-color2: #777;
+$form-color3: #cf2c2c;
+$form-font-color: black;
+$form-text2: rgb(255, 255, 255);
+
+$form-focus: $form-color3;
+$option-bg: $form-bg;
+$form-arrow: $form-color2;
+$form-border: 1px solid $form-color2;
+$form-border-radius: $radius1;
+$form-font-size: 1rem;
+$form-line-height: 1.5;
+$form-padding: 0.375rem 0.75rem;
+
+$bg-light: #faf9f6;
+$bg-dark: #0d0118;
+$primary: rgb(255, 123, 0);
+$secondary: #fffafa;
+$accent: #6f42c1;
+$text1: #301f40;
+$text2: #fffafa;
+$radius1: 7px;
+
+$success: gray;
+$info: gray;
+$warning: gray;
+$danger: gray;
+
+$dark0: black;
+$shadow1: 0 4px 0.5rem -0.125rem rgba(0, 0, 0, 0.1),
+  0 0.125rem 0.25rem -0.125rem rgba(0, 0, 0, 0.06);
+$gradient1: linear-gradient(180deg, #061161, #aa090e);
+$gradient2: linear-gradient(700deg, #061161, #aa090e);
+$width-lg: 960px;
+
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;

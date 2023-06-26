@@ -1,0 +1,42 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+    &__three {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    &__head {
+      background: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid $primary;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: $break-sm) {
+    .review {
+      &__three {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
