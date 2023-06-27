@@ -3,7 +3,6 @@ import Bike from "../components/Bike";
 import { useOutletContext } from "react-router-dom";
 
 const More = () => {
-  // const { id } = useParams();
   const bike = useOutletContext();
 
   return (

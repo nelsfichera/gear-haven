@@ -4,11 +4,11 @@ import { formatPrice, starRating } from "../utils/helper";
 import { pricing } from "../utils/data2";
 
 const Bike = ({ bike: one }) => {
-  // const one = allFilter.find((a) => a.tcin == id);
-  // console.log(one);
+  // Load images
   const [imgFirst, ...imgRest] = one.images;
+  // Apply filter
   const tags = Object.entries(one.filter).map((a) => <span>{a[1]} </span>);
-  //    Array.from(one.filter).map((a) => <span>{afterAll}</span>);
+  // Get prices
   const fromPricecat = (cat) => {
     return pricing.find((p) => p.type === cat).daily;
   };
@@ -30,6 +30,7 @@ const Bike = ({ bike: one }) => {
       <div className="bike__info">
         <h1>Daily Price: {formatPrice(fromPricecat(one.pricecat || "b"))}</h1>
         <h2>
+          {/* Load rating */}
           Rating: {one.rating} ({one.rating_count}) {starRating(one.rating)}
         </h2>
       </div>
@@ -47,17 +48,8 @@ const Bike = ({ bike: one }) => {
           </ul>
         </div>
       )}
-
       <br />
-
       <br />
-      {/* <div className="bike__bull">
-        <ul>
-          {one.bullet_descriptions.map((b) => (
-            <li dangerouslySetInnerHTML={{ __html: b }}></li>
-          ))}
-        </ul>
-      </div> */}
     </div>
   );
 };

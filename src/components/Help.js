@@ -6,20 +6,6 @@ const Help = () => {
   getFire().then((res) => console.log(res));
   getSelected().then((res) => console.log(res));
 
-  //   const {
-  //     tcin,
-  //     item: {
-  //       primary_barcode,
-  //       merchandise_type_attributes,
-  //       enrichment: {
-  //         images: { alternate_image_urls, primary_image_url },
-  //       },
-  //       product_description,
-  //     },
-  //     price: { reg_retail },
-  //     ratings_and_reviews: { statistics },
-  //   } = all[0];
-
   const newobj = all.map((a) => {
     const {
       tcin,
@@ -64,11 +50,6 @@ const Help = () => {
     };
   });
   console.log(122, newobj);
-  // const imgs = [primary_image_url, ...alternate_image_urls];
-  // const atts = merchandise_type_attributes.reduce((acc, itm) => {
-  //   return [...acc, { name: itm.name, values: itm.values.map((v) => v.name) }];
-  // }, []);
-  // console.log(atts);
 
   console.log(
     44,
@@ -115,12 +96,6 @@ const Help = () => {
           </p>
         </div>
       ))}
-
-      {/* // <div className="imgs">
-    //     {imgs.map((i) => (
-    //       <img src={i} alt="" />
-    //     ))}
-    //   </div> */}
     </div>
   );
 };

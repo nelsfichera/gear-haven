@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { pricing } from "../utils/data2";
 
 const Card = ({ item }) => {
+  // Load images, pricing, and filters
   const img = item.images[0] + "?wid=200";
   const tags = Object.entries(item.filter).map((a) => <span>{a[1]} </span>);
   const daily = pricing.find((p) => p.type === item.pricecat)?.daily || 2000;

@@ -41,7 +41,6 @@ const Dashboard = () => {
       });
   }, []);
 
-  // const [edit, setEdit] = useState("");
   function handleChange(e, a) {
     SetAllBikes((prev) => {
       return {
@@ -89,7 +88,6 @@ const Dashboard = () => {
     <div className="dashboard layout-lg">
       <Logout admin={userData.data.admin} />
       {!allBikes.loading && !userData.loading && (
-        // console.log(userData)
         <>
           <h2>Bikes rented: </h2>
           {userData.data.bikes.length ? (
