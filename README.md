@@ -12,7 +12,7 @@ A bike rental website featuring protected routes, shared navigation with routing
 - Firebase
 - React
 - React Router
-- SASS
+- SASSy CSS 
 
 #### Features: 
 - firebase authentication 
