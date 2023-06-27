@@ -46,14 +46,14 @@
     &:before {
       content: "";
       position: absolute;
-      background: #ff8f00;
+      background: #fca725;
       border-radius: 25px;
       top: 50px;
       left: 53%;
       right: 7%;
       bottom: 0;
       z-index: -1;
-      background-image: linear-gradient(225deg, #e84118 0%, #e84393 100%);
+      background-image: linear-gradient(225deg, #FCA725 0%, #cd861b 100%);
       background-size: cover;
       box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     }

@@ -124,7 +124,7 @@
     margin-bottom: 1px;
     border-radius: 6px;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: "Spectral", serif;
     font-size: 15px;
     height: 36px;
     line-height: 20px;
@@ -295,14 +295,14 @@
   }
   
   /* specific */
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200;400;600&display=swap");
   
   :root {
     --bg-light: #faf9f6;
     --bg-dark: #0d0118;
-    --primary: rgb(255, 123, 0);
+    --primary: rgb(102,199,60);
     --secondary: #fffafa;
-    --accent: #6f42c1;
+    --accent: #9852AB;
     --text1: #301f40;
     --text2: #fffafa;
     --radius1: 7px;
@@ -316,7 +316,7 @@
   }
   
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Spectral", serif;
     color: var(--text1);
     background: var(--bg-light);
   }
@@ -421,7 +421,7 @@
   .bg-wrapper:before {
     content: "";
     position: absolute;
-    background: #ff8f00;
+    background: #FCA725;
     border-radius: 25px;
     /* transform: skew(-5deg); */
     top: 50px;
@@ -429,7 +429,7 @@
     right: 7%;
     bottom: 0;
     z-index: -1;
-    background-image: linear-gradient(225deg, #e84118 0%, #e84393 100%);
+    background-image: linear-gradient(225deg, #FCA725 0%, #cd861b 100%);
     background-size: cover;
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
   }
@@ -546,7 +546,7 @@
   .rent__msg {
     position: absolute;
     inset: 0;
-    color: red;
+    color: #FCA725;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
@@ -796,7 +796,7 @@
   .pricing__card {
     display: flex;
     flex-direction: column;
-    background: wheat;
+    background: rgb(102,199,60);
     width: 500px;
     margin-bottom: 2rem;
   }

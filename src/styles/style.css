@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200;400;600&display=swap");
 html,
 body,
 div,
@@ -91,7 +91,7 @@ body {
   margin-bottom: 1px;
   border-radius: 6px;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "Spectral", serif;
   font-size: 15px;
   height: 36px;
   line-height: 20px;
@@ -152,13 +152,13 @@ body {
 }
 
 textarea::-moz-placeholder {
-  font-family: Arial, sans-serif;
+  font-family: Spectral, serif;
   font-size: var(--form-font-size);
   font-weight: 400;
 }
 
 textarea::placeholder {
-  font-family: Arial, sans-serif;
+  font-family: "Spectral", serif;
   font-size: var(--form-font-size);
   font-weight: 400;
 }
@@ -266,8 +266,8 @@ select:focus + .focus {
 }
 
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #6f42c1; /* Blue */
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #9852AB; 
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -299,7 +299,7 @@ select:focus + .focus {
   padding: 2rem;
 }
 .hero__text span {
-  color: #6f42c1;
+  color: #9852AB;
 }
 .hero__text h1 {
   font-size: 3rem;
@@ -310,7 +310,7 @@ select:focus + .focus {
   margin-bottom: 0.5rem;
 }
 .hero__btn {
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   width: 60px;
 }
 .hero__photo {
@@ -332,14 +332,14 @@ select:focus + .focus {
 .bg-wrapper:before {
   content: "";
   position: absolute;
-  background: #ff8f00;
+  background: #fca725;
   border-radius: 25px;
   top: 50px;
   left: 53%;
   right: 7%;
   bottom: 0;
   z-index: -1;
-  background-image: linear-gradient(225deg, #e84118 0%, #e84393 100%);
+  background-image: linear-gradient(225deg, #FCA725 0%, #cd861b 100%);;
   background-size: cover;
   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
@@ -405,7 +405,7 @@ select:focus + .focus {
   }
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Spectral", serif;
   color: #301f40;
   background: #faf9f6;
 }
@@ -446,7 +446,7 @@ p {
 }
 
 .btn__primary {
-  background: #6f42c1;
+  background: #9852AB;
 }
 
 .layout-lg {
@@ -483,7 +483,7 @@ p {
   padding: 2rem;
 }
 .about__text h3 {
-  color: #6f42c1;
+  color: #9852AB;
   margin-bottom: 0.5rem;
 }
 
@@ -506,12 +506,12 @@ p {
 .bike__title {
   width: 60%;
   text-decoration-line: underline;
-  text-decoration-color: rgb(255, 123, 0);
+  text-decoration-color: rgb(102,199,60);
 }
 .bike__img {
   align-self: center;
   display: flex;
-  border-bottom: 5px solid #6f42c1;
+  border-bottom: 5px solid #9852AB;
   margin: 1rem 0;
   max-height: 605px;
 }
@@ -563,7 +563,7 @@ p {
 .details__nav {
   text-align: center;
   margin-bottom: 1rem;
-  background: #6f42c1;
+  background: #9852AB;
   padding: 0.5rem;
   align-self: stretch;
 }
@@ -580,14 +580,14 @@ p {
 .details__nav__rent, .details__nav__rent:visited, .details__nav__rent:hover {
   display: inline;
   cursor: pointer;
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   padding: 0.5rem;
   border-radius: 7px;
   text-decoration: none;
 }
 
 .footer {
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
 }
 .footer__container {
   margin: 0 auto;
@@ -631,11 +631,11 @@ p {
   font-size: 1rem;
 }
 .how__card:nth-of-type(2) .how__icon {
-  background: #6f42c1;
+  background: #9852AB;
   color: #fffafa;
 }
 .how__icon {
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -704,7 +704,7 @@ p {
 .burger__btn .bar {
   height: 3px;
   width: 100%;
-  background-color: rgb(255, 123, 0);
+  background-color: rgb(102,199,60);
   border-radius: 10px;
 }
 
@@ -720,7 +720,7 @@ p {
   height: 3px;
   bottom: -5px;
   left: 0;
-  background-color: rgb(255, 123, 0);
+  background-color: rgb(102,199,60);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -763,12 +763,12 @@ p {
 .pricing__card {
   display: flex;
   flex-direction: column;
-  background: wheat;
+  background: rgb(102,199,60);
   max-width: 500px;
   margin-bottom: 2rem;
 }
 .pricing__card h2 {
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   text-align: center;
 }
 .pricing__card p {
@@ -839,14 +839,14 @@ p {
 .rent__msg {
   position: absolute;
   inset: 0;
-  color: red;
+  color: #FCA725;
   font-weight: bold;
   text-align: center;
   padding: 1rem;
 }
 .rent__badge {
   padding: 0.3rem;
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   margin: 0.5rem 0;
   border-radius: 7px;
 }
@@ -856,13 +856,13 @@ p {
 }
 .rent__filter__btn {
   padding: 0.3rem 1rem;
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   margin: 0.5rem 0;
   border-radius: 7px;
   cursor: pointer;
 }
 .rent__filter__btn--special {
-  background: #6f42c1;
+  background: #9852AB;
   color: #fffafa;
 }
 .rent__filter__btn--active {
@@ -902,7 +902,7 @@ p {
   padding: 1rem;
 }
 .review__head {
-  background: rgb(255, 123, 0);
+  background: rgb(102,199,60);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -910,7 +910,7 @@ p {
   height: 3rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid rgb(255, 123, 0);
+  border: 3px solid rgb(102,199,60);
 }
 .review__head img {
   width: 100%;
@@ -931,7 +931,7 @@ p {
   right: 40px;
   z-index: 20;
   font-size: 2rem;
-  background-color: #6f42c1;
+  background-color: #9852AB;
   border: 2px solid #fff;
   border-radius: 50%;
   height: 80px;
@@ -954,7 +954,7 @@ p {
 .user__nav {
   text-align: center;
   margin-bottom: 1rem;
-  background: #6f42c1;
+  background: #9852AB;
   padding: 0.5rem;
   align-self: stretch;
 }
